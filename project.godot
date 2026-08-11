@@ -1,0 +1,20 @@
+; Engine configuration File.
+; Trajetória (título de trabalho) — versão v0.1.0-nucleo-validado
+; Ver RELATORIO-ETAPA11.md para o que essa versão significa e o que ainda falta.
+
+config_version=5
+
+[application]
+
+config/name="Trajetoria v0.1.0-nucleo-validado"
+run/main_scene="res://ui/title_screen.tscn"
+config/features=PackedStringArray("4.6")
+
+[autoload]
+
+EconomyManager="*res://autoloads/economy_manager.gd"
+ProgressionManager="*res://autoloads/progression_manager.gd"
+DecisionManager="*res://autoloads/decision_manager.gd"
+InventoryManager="*res://autoloads/inventory_manager.gd"
+MissionManager="*res://autoloads/mission_manager.gd"
+SaveManager="*res://autoloads/save_manager.gd"
