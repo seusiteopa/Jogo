@@ -1,0 +1,41 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://ui/title_screen.gd" id="1"]
+
+[node name="TitleScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.6, 0.6, 0.6, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="LabelTitulo" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+horizontal_alignment = 1
+text = "Trajetória (nome provisório)"
+
+[node name="LabelSubtitulo" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+horizontal_alignment = 1
+text = "Identidade visual pendente de aprovação — versão de validação técnica"
+
+[node name="BotaoIniciar" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Iniciar"
